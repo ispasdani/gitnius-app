@@ -5,7 +5,7 @@ interface SidebarLayoutProps {
 }
 
 const SidebarLayout = ({ children }: SidebarLayoutProps) => {
-  return <div>{children}</div>;
+  return <SidebarProvider></SidebarProvider>;
 };
 
 export default SidebarLayout;
