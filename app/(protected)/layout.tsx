@@ -1,3 +1,5 @@
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { UserButton } from "@clerk/nextjs";
 import React from "react";
 
 interface SidebarLayoutProps {
@@ -5,7 +7,17 @@ interface SidebarLayoutProps {
 }
 
 const SidebarLayout = ({ children }: SidebarLayoutProps) => {
-  return <SidebarProvider></SidebarProvider>;
+  return (
+    <SidebarProvider>
+      {/* <AppSidebar /> */}
+      <main>
+        <nav>
+          {/* <SearchBar /> */}
+          <UserButton />
+        </nav>
+      </main>
+    </SidebarProvider>
+  );
 };
 
 export default SidebarLayout;
