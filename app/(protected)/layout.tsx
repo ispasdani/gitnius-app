@@ -16,7 +16,7 @@ const SidebarLayout = ({ children }: SidebarLayoutProps) => {
           {/* <SearchBar /> */}
           <UserButton />
         </nav>
-        <div>main content</div>
+        <div>{children}</div>
       </main>
     </SidebarProvider>
   );

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Sidebar,
@@ -53,7 +55,7 @@ const AppSidebar = () => {
   const pathname = usePathname();
 
   return (
-    <Sidebar collapsible="icon" variant="floating">
+    <Sidebar collapsible="icon">
       <SidebarHeader>Logo</SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
