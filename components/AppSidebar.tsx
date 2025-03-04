@@ -10,12 +10,23 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "./ui/sidebar";
-import { Bot, CreditCard, LayoutDashboard, Presentation } from "lucide-react";
+import {
+  Bot,
+  CreditCard,
+  Home,
+  LayoutDashboard,
+  Presentation,
+} from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
 const items = [
+  {
+    title: "Home",
+    url: "/",
+    icon: Home,
+  },
   {
     title: "Dashboard",
     url: "/dashboard",
