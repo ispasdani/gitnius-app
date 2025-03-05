@@ -17,6 +17,7 @@ const SidebarLayout = ({ children }: SidebarLayoutProps) => {
           <UserButton />
         </nav>
         <div>{children}</div>
+        <div>this is going to be deleteds</div>
       </main>
     </SidebarProvider>
   );
